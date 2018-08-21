@@ -17,7 +17,9 @@ namespace Tutorial.Akka02.TestingActors
             Sender.Tell(new SomeResponseMessage());
         }
 
+        #region Messages
         public class SomeRequestMessage { }
         public class SomeResponseMessage { }
+        #endregion
     }
 }
