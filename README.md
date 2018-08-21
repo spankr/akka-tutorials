@@ -17,6 +17,9 @@
 
 ## Children Actors
 
+> Minimal example of actors creating child actors.
+  * More reading: [Actor Hierarchy][3]
+
 ## Persistence
 
   TBD
@@ -25,7 +28,11 @@
 
   TBD
 
-## Ask
+## Asking Messages
+
+  TBD
+
+## Forwarding Messages
 
   TBD
 
@@ -35,4 +42,5 @@
 
   [1]: https://github.com/akkadotnet/akka.net/issues/1532 "Termination"
   [2]: https://petabridge.com/blog/how-to-unit-test-akkadotnet-actors-akka-testkit/ "Unit Testing with TestKit"
+  [3]: https://petabridge.com/blog/how-actors-recover-from-failure-hierarchy-and-supervision/ "Actor Hierarchy and Supervision"
   [xUnit]: https://xunit.github.io/ "xUnit.net Testing"
