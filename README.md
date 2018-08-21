@@ -15,9 +15,9 @@
   * Example of expecting no response
   * [xUnit]
 
-## Children Actors
+## Tutorial.Akka03.Children
 
-> Minimal example of actors creating child actors.
+> Minimal example of actors and the parent-child relationship.
   * More reading: [Actor Hierarchy][3]
 
 ## Persistence
