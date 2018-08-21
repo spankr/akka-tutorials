@@ -6,7 +6,7 @@
   * Actor system creation
   * Actor creation
   * Sending messages to actors using ```Tell()```
-  * [Actor system termination](1)
+  * [Actor system termination][1]
 
 ## Testing
 
