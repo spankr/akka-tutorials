@@ -20,9 +20,12 @@
 > Minimal example of actors and the parent-child relationship.
   * More reading: [Actor Hierarchy][3]
 
-## Persistence
+## Tutorial.Akka04.Persistence
 
-  TBD
+> Example actors with tests that demonstrate the basics of actor [persistence].
+  * [Events]
+  * [Snapshots]
+  * New: [Watching][4] for actor termination
 
 ## Logging
 
@@ -40,7 +43,11 @@
 
   TBD
 
-  [1]: https://github.com/akkadotnet/akka.net/issues/1532 "Termination"
-  [2]: https://petabridge.com/blog/how-to-unit-test-akkadotnet-actors-akka-testkit/ "Unit Testing with TestKit"
-  [3]: https://petabridge.com/blog/how-actors-recover-from-failure-hierarchy-and-supervision/ "Actor Hierarchy and Supervision"
-  [xUnit]: https://xunit.github.io/ "xUnit.net Testing"
+[1]: https://github.com/akkadotnet/akka.net/issues/1532 "Termination"
+[2]: https://petabridge.com/blog/how-to-unit-test-akkadotnet-actors-akka-testkit/ "Unit Testing with TestKit"
+[3]: https://petabridge.com/blog/how-actors-recover-from-failure-hierarchy-and-supervision/ "Actor Hierarchy and Supervision"
+[4]: https://getakka.net/api/Akka.Dispatch.SysMsg.Watch.html "Watching actors"
+[persistence]: https://getakka.net/articles/persistence/architecture.html
+[Events]: https://getakka.net/articles/persistence/event-sourcing.html
+[Snapshots]: https://getakka.net/articles/persistence/snapshots.html
+[xUnit]: https://xunit.github.io/ "xUnit.net Testing"
