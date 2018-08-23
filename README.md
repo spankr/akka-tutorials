@@ -27,9 +27,10 @@
   * [Snapshots]
   * New: [Watching][4] for actor termination
 
-## Logging
+## Tutorial.Akka05.LogExample
 
-  TBD
+> Example of creating a logger within an actor and using it.
+  * **NOTE:** Default log level within the actor system is **Info**. Configuration is required to display debug level logs.
 
 ## Asking Messages
 

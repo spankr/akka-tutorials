@@ -14,7 +14,7 @@ namespace Tutorial.Akka05.LogExample
             var actorSystem = ActorSystem.Create("MySystem");
 
             // Step 2. Add a named actor to the system
-            var actorThatLogs = actorSystem.ActorOf(Props.Create(() => new ActorThatLogs()));
+            var actorThatLogs = actorSystem.ActorOf(Props.Create(() => new ActorThatLogs()), "actor-that-has-logs");
 
             // Step 3. Send a message to our actor (e.g. a name)
             actorThatLogs.Tell("Leroy Jenkins");

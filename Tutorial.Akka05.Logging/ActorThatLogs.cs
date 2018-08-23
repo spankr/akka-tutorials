@@ -13,10 +13,9 @@ namespace Tutorial.Akka05.LogExample
         // Akka.net has a built-in logging feature
         private readonly ILoggingAdapter _log = Logging.GetLogger(Context);
 
-        private void OnReceiveMessage(string m)
+        private void OnReceiveMessage(string msg)
         {
-            _log.Info($"{Self.Path.Name} received a message of '{m}'");
+            _log.Info($"{Self.Path.Name} received a message of '{msg}'");
         }
-
     }
 }
