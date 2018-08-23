@@ -2,7 +2,7 @@
 using System;
 using System.Threading;
 
-namespace Tutorial.Akka01.SimpleActor
+namespace Tutorial.Akka05.LogExample
 {
     class Program
     {
@@ -12,15 +12,12 @@ namespace Tutorial.Akka01.SimpleActor
 
             // Step 1. Create the actor system
             var actorSystem = ActorSystem.Create("MySystem");
-            Console.WriteLine($"Actor System '{actorSystem.Name}' created.");
 
             // Step 2. Add a named actor to the system
-            var helloWorldActor = actorSystem.ActorOf(Props.Create(() => new HelloWorldActor()), "hello-world-actor");
-            Console.WriteLine($"Actor '{helloWorldActor.Path.Name}' created.");
+            var actorThatLogs = actorSystem.ActorOf(Props.Create(() => new ActorThatLogs()));
 
             // Step 3. Send a message to our actor (e.g. a name)
-            Console.WriteLine("Sending message to actor.");
-            helloWorldActor.Tell("Leroy Jenkins");
+            actorThatLogs.Tell("Leroy Jenkins");
 
             Thread.Sleep(1000); // a delay to see our console output
             Console.WriteLine("Enter a key to exit");
