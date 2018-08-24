@@ -3,20 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Akka01.SimpleActor", "Tutorial.Akka01.SimpleActor\Tutorial.Akka01.SimpleActor.csproj", "{65482BBB-F05E-4B99-BFBE-7FB0080DC9F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka01.SimpleActor", "Tutorial.Akka01.SimpleActor\Tutorial.Akka01.SimpleActor.csproj", "{65482BBB-F05E-4B99-BFBE-7FB0080DC9F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{70A79373-51B2-48B6-A496-E44681D82555}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Akka02.TestingActors", "Tutorial.Akka02.TestingActors\Tutorial.Akka02.TestingActors.csproj", "{5DF900FA-5807-421B-A262-9ADF2F296B85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka02.TestingActors", "Tutorial.Akka02.TestingActors\Tutorial.Akka02.TestingActors.csproj", "{5DF900FA-5807-421B-A262-9ADF2F296B85}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Akka03.Children", "Tutorial.Akka03.Children\Tutorial.Akka03.Children.csproj", "{C36F1E2B-3A94-4E86-903D-4B1D393F2A5D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka03.Children", "Tutorial.Akka03.Children\Tutorial.Akka03.Children.csproj", "{C36F1E2B-3A94-4E86-903D-4B1D393F2A5D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tutorial.Akka04.Persistence", "Tutorial.Akka04.Persistence\Tutorial.Akka04.Persistence.csproj", "{294E8C87-C4A0-4D9F-994D-6AE3424EFBB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka04.Persistence", "Tutorial.Akka04.Persistence\Tutorial.Akka04.Persistence.csproj", "{294E8C87-C4A0-4D9F-994D-6AE3424EFBB2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka05.LogExample", "Tutorial.Akka05.Logging\Tutorial.Akka05.LogExample.csproj", "{AB3BC09E-6C15-4A15-8062-B1016A55BDB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka06.AskingMessages", "Tutorial.Akka06.AskingMessages\Tutorial.Akka06.AskingMessages.csproj", "{F1AA7C67-B371-4F61-ADD5-A9AB92996A97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{AB3BC09E-6C15-4A15-8062-B1016A55BDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB3BC09E-6C15-4A15-8062-B1016A55BDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB3BC09E-6C15-4A15-8062-B1016A55BDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1AA7C67-B371-4F61-ADD5-A9AB92996A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1AA7C67-B371-4F61-ADD5-A9AB92996A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1AA7C67-B371-4F61-ADD5-A9AB92996A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1AA7C67-B371-4F61-ADD5-A9AB92996A97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

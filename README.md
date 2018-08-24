@@ -32,9 +32,9 @@
 > Example of creating a logger within an actor and using it.
   * **NOTE:** Default log level within the actor system is **Info**. Configuration is required to display debug level logs.
 
-## Asking Messages
+## Tutorial.Akka06.AskingMessages
 
-  TBD
+> Test cases demonstrating the difference between ```Ask()``` and ```Tell()```.
 
 ## Forwarding Messages
 
