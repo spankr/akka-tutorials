@@ -1,5 +1,12 @@
 # Actor Examples using Akka.NET
 
+These examples are intended to be "empirical" examples of some of the logic in the [actor pattern], 
+using the Akka.NET open-source library. 
+If you are new, I cannot reccommend strongly enough going through the [Akka.Net Bootcamp][bootcamp] by Petabridge.
+Petabridge is the team that created (and maintain!) all of the akka.NET libraries.
+
+They can also be found on [Akka.NET Gitter][gitter] where they help support the community.
+
 ## Tutorial.Akka01.SimpleActor
 
 > Provides a minimalist actor system as a 'Hello World' announcement.
@@ -48,6 +55,9 @@
 [2]: https://petabridge.com/blog/how-to-unit-test-akkadotnet-actors-akka-testkit/ "Unit Testing with TestKit"
 [3]: https://petabridge.com/blog/how-actors-recover-from-failure-hierarchy-and-supervision/ "Actor Hierarchy and Supervision"
 [4]: https://getakka.net/api/Akka.Dispatch.SysMsg.Watch.html "Watching actors"
+[actor pattern]: https://en.wikipedia.org/wiki/Actor_model "Actor Pattern on Wikipedia"
+[bootcamp]: https://petabridge.com/bootcamp/ "Akka.NET Bootcamp by Petabridge"
+[gitter]: https://gitter.im/akkadotnet/akka.net "akkadotnet on Gitter"
 [persistence]: https://getakka.net/articles/persistence/architecture.html
 [Events]: https://getakka.net/articles/persistence/event-sourcing.html
 [Snapshots]: https://getakka.net/articles/persistence/snapshots.html
