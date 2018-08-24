@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka06.AskingMessa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka07.ForwardingMessages", "Tutorial.Akka07.ForwardingMessages\Tutorial.Akka07.ForwardingMessages.csproj", "{02E393D8-73D1-4562-8AA5-3F7EE95D6F97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial.Akka08.ActorSelection", "Tutorial.Akka08.ActorSelection\Tutorial.Akka08.ActorSelection.csproj", "{FD0154EA-CC7B-45F3-BE26-A20CCB06DA10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{02E393D8-73D1-4562-8AA5-3F7EE95D6F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02E393D8-73D1-4562-8AA5-3F7EE95D6F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E393D8-73D1-4562-8AA5-3F7EE95D6F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0154EA-CC7B-45F3-BE26-A20CCB06DA10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0154EA-CC7B-45F3-BE26-A20CCB06DA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0154EA-CC7B-45F3-BE26-A20CCB06DA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0154EA-CC7B-45F3-BE26-A20CCB06DA10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -53,9 +53,11 @@ router actors effectively "invisible" in the flow of the message.
   * New: [TestActor]
   * New: ExpectMsgFrom
 
-## ActorSelection
+## Tutorial.Akka08.ActorSelection
 
-  TBD
+> Demonstrate the basic use of ActorSelection and compare it to using the IActorRef. Sometimes 
+direct access to the actor that we need to communicate with is not available. That is where ActorSelection
+comes into play. We are effectively _"talking to the actor that lives at that address"._
 
 [1]: https://github.com/akkadotnet/akka.net/issues/1532 "Termination"
 [2]: https://petabridge.com/blog/how-to-unit-test-akkadotnet-actors-akka-testkit/ "Unit Testing with TestKit"
