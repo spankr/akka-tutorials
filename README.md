@@ -2,10 +2,12 @@
 
 These examples are intended to be "empirical" examples of some of the logic in the [actor pattern], 
 using the Akka.NET open-source library. 
-If you are new, I cannot reccommend strongly enough going through the [Akka.Net Bootcamp][bootcamp] by Petabridge.
-Petabridge is the team that created (and maintain!) all of the akka.NET libraries.
+If you are new to Akka.NET and the actor system, I strongly recommend:
 
-They can also be found on [Akka.NET Gitter][gitter] where they help support the community.
+ * The [Akka.Net Bootcamp][bootcamp] by Petabridge.
+ * The [Official Akka.NET Professional Code Samples][samples].
+ 
+Petabridge is the team that created (and maintain!) all of the akka.NET libraries. They can also be found on [Akka.NET Gitter][gitter] where they help support the community.
 
 ## Tutorial.Akka01.SimpleActor
 
@@ -45,7 +47,11 @@ They can also be found on [Akka.NET Gitter][gitter] where they help support the 
 
 ## Forwarding Messages
 
-  TBD
+> Demonstrate ```Forward()``` and how it preserves the original **Sender** on the message, making
+router actors effectively "invisible" in the flow of the message.
+  * New: [ReceiveAny]
+  * New: [TestActor]
+  * New: ExpectMsgFrom
 
 ## ActorSelection
 
@@ -55,8 +61,11 @@ They can also be found on [Akka.NET Gitter][gitter] where they help support the 
 [2]: https://petabridge.com/blog/how-to-unit-test-akkadotnet-actors-akka-testkit/ "Unit Testing with TestKit"
 [3]: https://petabridge.com/blog/how-actors-recover-from-failure-hierarchy-and-supervision/ "Actor Hierarchy and Supervision"
 [4]: https://getakka.net/api/Akka.Dispatch.SysMsg.Watch.html "Watching actors"
+[TestActor]: https://petabridge.com/blog/how-to-unit-test-akkadotnet-actors-akka-testkit/#the-testactor "The TestActor"
+[ReceiveAny]: https://getakka.net/articles/actors/receive-actor-api.html#receiveany "ReceiveAny Documentation"
 [actor pattern]: https://en.wikipedia.org/wiki/Actor_model "Actor Pattern on Wikipedia"
 [bootcamp]: https://petabridge.com/bootcamp/ "Akka.NET Bootcamp by Petabridge"
+[samples]: https://github.com/petabridge/akkadotnet-code-samples "Akka.NET Professional Code Samples"
 [gitter]: https://gitter.im/akkadotnet/akka.net "akkadotnet on Gitter"
 [persistence]: https://getakka.net/articles/persistence/architecture.html
 [Events]: https://getakka.net/articles/persistence/event-sourcing.html
