@@ -45,7 +45,7 @@ Petabridge is the team that created (and maintain!) all of the akka.NET librarie
 
 > Test cases demonstrating the difference between ```Ask()``` and ```Tell()```.
 
-## Forwarding Messages
+## Tutorial.Akka07.ForwardingMessages
 
 > Demonstrate ```Forward()``` and how it preserves the original **Sender** on the message, making
 router actors effectively "invisible" in the flow of the message.
