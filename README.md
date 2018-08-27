@@ -4,59 +4,64 @@ These examples are intended to be "empirical" examples of some of the logic in t
 using the Akka.NET open-source library. 
 If you are new to Akka.NET and the actor system, I strongly recommend:
 
- * The [Akka.Net Bootcamp][bootcamp] by Petabridge.
- * The [Official Akka.NET Professional Code Samples][samples].
- 
+* The [Akka.Net Bootcamp][bootcamp] by Petabridge.
+* The [Official Akka.NET Professional Code Samples][samples].
+
 Petabridge is the team that created (and maintain!) all of the akka.NET libraries. They can also be found on [Akka.NET Gitter][gitter] where they help support the community.
 
 ## Tutorial.Akka01.SimpleActor
 
 > Provides a minimalist actor system as a 'Hello World' announcement.
-  * Actor system creation
-  * Actor creation
-  * Sending messages to actors using ```Tell()```
-  * [Actor system termination][1]
+
+* Actor system creation
+* Actor creation
+* Sending messages to actors using ```Tell()```
+* [Actor system termination][1]
 
 ## Tutorial.Akka02.TestingActors
 
 > Provides a minimal example of [testing an actor][2] for message handling and response.
-  * Basic request-response actor model
-  * Example of expecting no response
-  * [xUnit]
+
+* Basic request-response actor model
+* Example of expecting no response
+* [xUnit]
 
 ## Tutorial.Akka03.Children
 
 > Minimal example of actors and the parent-child relationship.
-  * More reading: [Actor Hierarchy][3]
+
+* More reading: [Actor Hierarchy][3]
 
 ## Tutorial.Akka04.Persistence
 
 > Example actors with tests that demonstrate the basics of actor [persistence].
-  * [Events]
-  * [Snapshots]
-  * New: [Watching][4] for actor termination
+
+* [Events]
+* [Snapshots]
+* New: [Watching][4] for actor termination
 
 ## Tutorial.Akka05.LogExample
 
 > Example of creating a logger within an actor and using it.
-  * **NOTE:** Default log level within the actor system is **Info**. Configuration is required to display debug level logs.
+
+* **NOTE:** Default log level within the actor system is **Info**. Configuration is required to display debug level logs.
 
 ## Tutorial.Akka06.AskingMessages
 
-> Test cases demonstrating the difference between ```Ask()``` and ```Tell()```.
+> Test cases demonstrating the difference between ```Ask()``` and ```Tell()```. Using Ask should be [used sparingly][ask]. The one place I use it is for external code to _ask_ into the system for a response. (e.g. my WebAPI controllers)
 
 ## Tutorial.Akka07.ForwardingMessages
 
 > Demonstrate ```Forward()``` and how it preserves the original **Sender** on the message, making
 router actors effectively "invisible" in the flow of the message.
-  * New: [ReceiveAny]
-  * New: [TestActor]
-  * New: ExpectMsgFrom
+
+* New: [ReceiveAny]
+* New: [TestActor]
+* New: ExpectMsgFrom
 
 ## Tutorial.Akka08.ActorSelection
 
-> Demonstrate the basic use of ActorSelection and compare it to using the IActorRef. Sometimes 
-direct access to the actor that we need to communicate with is not available. That is where ActorSelection
+> Demonstrate the basic use of ActorSelection and compare it to using the IActorRef. Sometimes direct access to the actor that we need to communicate with is not available. That is where ActorSelection
 comes into play. We are effectively _"talking to the actor that lives at that address"._
 
 [1]: https://github.com/akkadotnet/akka.net/issues/1532 "Termination"
@@ -72,4 +77,5 @@ comes into play. We are effectively _"talking to the actor that lives at that ad
 [persistence]: https://getakka.net/articles/persistence/architecture.html
 [Events]: https://getakka.net/articles/persistence/event-sourcing.html
 [Snapshots]: https://getakka.net/articles/persistence/snapshots.html
+[ask]: https://bartoszsypytkowski.com/dont-ask-tell-2/ "Don't Ask, Tell"
 [xUnit]: https://xunit.github.io/ "xUnit.net Testing"
